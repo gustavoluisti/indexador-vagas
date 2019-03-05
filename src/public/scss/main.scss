@@ -1,3 +1,15 @@
-body {
-    background: #000000;
+#header {
+    .navbar {
+        .navbar-brand {
+            color: white
+        }
+    }
+    #navbar {
+        .nav-item{
+            .nav-link{
+                color: white
+            }
+            
+        }
+    }
 }
