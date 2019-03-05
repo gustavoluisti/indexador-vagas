@@ -35,6 +35,7 @@ gulp.task('sass', () => {
 
 	return gulp.src(path.join(PATHS.src_scss, '*.scss'))
 			.pipe(sass().on('error', sass.logError))
+			.pipe(sass().on('error', sass.logError))
 			.pipe(postcss(plgs))
 			.pipe(rename({ suffix: '.min' }))
 			.pipe(gulp.dest(PATHS.dist_scss))
